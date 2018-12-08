@@ -1,0 +1,13 @@
+# Filename:     $HOME/.zshrc.local
+# Purpose:      local config file for zsh (z shell)
+
+# Unset some of Grml's .zshrc options
+unsetopt extended_history
+unsetopt histignorealldups
+
+# mkdir, cd into it
+# This was copied from http://onethingwell.org/post/586977440/mkcd-improved (CC BY 3.0)
+mkcd() {
+  mkdir -p "$*"
+  cd "$*"
+}
