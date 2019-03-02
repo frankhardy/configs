@@ -29,6 +29,9 @@ colorscheme solarized
 " Turn on line numbering
 set number
 
+" Display the cursor position
+set ruler
+
 " Python with virtualenv support
 py << EOF
 import os.path
